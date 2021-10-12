@@ -1,4 +1,4 @@
-$(()=>{
+$(function(){
   // jQuery goes here...
 
   // Uncomment this line to fade out the red box on page load
@@ -99,22 +99,77 @@ $(()=>{
   // var detachedItem = $('.red-box').detach();
   // $('#list').append(detachedItem);
 
-  // $('#list, .red-box, .green-box').empty();
+  // $('#list, .red-box, .green-box, form').empty();
+
+
+  // var galleryImage=$('.gallery').find('img').first();
+  // var images=[
+  //             './images/laptop-mobile_small.jpg',
+  //             './images/laptop-on-table_small.jpg',
+  //             './images/people-office-group-team_small.jpg',
+  //            ];
+             
+  // var i=0;
+  // setInterval(()=>
+  // {
+  //   i=(i+1) % images.length;
+  //   galleryImage.fadeOut(function(){
+  //       $(this).attr("src", images[i]);
+  //       $(this).fadeIn();
+  //   });
+  // },1000);
 
 
 
 
 
 
+  // 5. Manipulating the DOM II – Changing Element Data and CSS
+  // alert("he");
+  // $(".gallery").css("dispaly", "none");
+
+  // var redBox = $(".red-box");
+  // alert(redBox.css("width"))   
+  // alert(redBox.width());   
+  // var properties = $('p').css(["font-size","color","line-height"]);
+  // console.log(properties);
+
+  // $('p').addClass('fancy-text');
+  // $("li li").addClass(function(index) 
+  // { 
+  //   $(this).addClass("item-"+ index);  
+  // });
+
+  // $('div').addClass(function (index, currentClass)
+  //   { 
+  //     if(currentClass==="dummy")
+  //     {
+  //       return "red-box";
+  //     }
+  //   });
+
+
+    // $('dummy').removeClass("red-box").addClass("green-box");
+  // var gallery = $(".gallery");
+  //   var images=[
+  //               './images/laptop-mobile_small.jpg',
+  //               './images/laptop-on-table_small.jpg',
+  //               './images/people-office-group-team_small.jpg',
+  //              ];
+  
+  // gallery.data("availableImages", images);
+  // // console.log(gallery.data("availableImages"));
+  // gallery.data("name", "testing images");
+  // console.log(gallery.data());
+  // gallery.removeData("name");
+  // console.log(gallery.data());
 
 
 
 
-
-
-
-
-
-
+  // var firstPar = $("p:first");
+  // console.log(firstPar.html());
+  // console.log(firstPar.text());
+  // $("p:first").html( firstPar.html() +"this was appended");
 
 });
