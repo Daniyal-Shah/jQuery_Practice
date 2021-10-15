@@ -172,4 +172,195 @@ $(function(){
   // console.log(firstPar.text());
   // $("p:first").html( firstPar.html() +"this was appended");
 
-});
+
+  // Events
+
+// $("#btn-click").click(function (e) { 
+//   e.preventDefault();
+//   alert("hello");
+// });
+
+// $(".green-box").hover(function () {
+//     // over
+//     $(this).text("hover over");
+//   }, function () {
+//     // out
+//     $(this).text("hover out");
+//   }
+// );
+
+// $(".blue-box").mouseenter(function () { 
+//   $(this).fadeTo(500, 0.5);  
+// });
+
+// $(".blue-box").mouseleave(function () { 
+//   $(this).fadeTo(500, 1);
+// });
+
+// Delegated events
+
+
+// $("p").click(function (e) { 
+//   e.preventDefault();
+//   $(this).slideUp();
+// });
+
+
+// $("#content").on("click","p", function () {
+//   $(this).slideUp();
+// });
+
+
+// $("#content").append("<p>this is dynamically added</p>");
+
+// Passing data to user on some event'
+
+// $("#btn-click").click({
+//   user:"Daniyal"
+// },  function (e) { 
+//   e.preventDefault();
+//   greetUser(e.data);
+// });
+
+// function greetUser(userData)
+// {
+//   username= userData.user || "anonyms";
+//   alert("hello "+ username)
+// }
+
+// var galleryImages = $(".gallery").find("img");
+// galleryImages.css("width", "33%").css("opacity","0.7");
+
+// galleryImages.mouseenter(function () { 
+//   $(this).stop().fadeTo(500,1);  
+// });
+
+// galleryImages.mouseleave(function () { 
+//   $(this).stop().fadeTo(500,0.7);  
+// });
+
+// galleryImages.click(function (e) { 
+//   e.preventDefault();
+//   var source=$(this).attr("src");
+//   var image= $("<img>").attr("src", source).css("width", "100%");
+//   $(".lightbox").empty().append(image).fadeTo(2000);
+// });
+
+  // var inputFields=$("input:text, input:password, textarea");
+  
+  // inputFields.focus(function (e) 
+  // { 
+  //   e.preventDefault();
+  //   $(this).css("box-shadow","0 0 4px red");
+  // });
+
+  // inputFields.blur(function (e) { 
+  //   e.preventDefault();
+  //   $(this).css("box-shadow","none");    
+  // });
+
+
+  // $("#name").blur(function () { 
+  // var text = $(this).val();
+  // if(text.length <3)    
+  //   $(this).css("box-shadow","","0 0 4px #811");
+  // else
+  //   $(this).css("box-shadow","","0 0 4px #181");      
+  // });
+
+  // $("#checkbox").change(function () { 
+
+  //   var isChecked =$(this).is(":checked");
+  //   if (isChecked) 
+  //   {
+  //     alert("checked");
+      // $(this).add("label[for=''cb]").css("box-shadow","","0 0 4px #811");
+  //   } 
+  //   else 
+  //   {
+  //     alert("unchecked");
+      // $(this).add("label[for=''cb]").css("box-shadow","","0 0 4px #181");      
+  //   }    
+  // });
+
+  // $("#form").submit(function (e) { 
+
+  //   var text= $("#message");
+  //   if(text.val().trim()=="")
+  //   {
+  //     e.preventDefault();
+  //     text.css("box-shadow","","0 0 4px #811");
+  //   }
+  //   else{
+  //     alert("data");
+  //     text.css("box-shadow","","0 0 4px #181");
+  //   }    
+  // });
+
+
+    // AJAX
+
+    // $("#code").load("js/script.js");
+
+    // $("#code").load("js/script.js", function(response,status){
+
+    //   if(status=="error")
+    //   {
+    //     alert("doesnt exist");
+    //   }
+    //   else{
+    //     console.log(response)
+    //   }
+    // })
+
+    // var flickrAPI= "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+    // $.getJSON(flickrAPI,{
+    //   // options
+    //   tags:"sun",
+    //   tagmode:"any",
+    //   format:"json"
+
+    // }).done( function(data){
+    //   // success
+    //   console.log(data);
+    //   // $.each(data.items, function (indexInArray, valueOfElement) { 
+    //   //   console.log(valueOfElement)   
+    //   // });
+
+    // }).fail(function (){
+    //   alert("Error")
+    // })
+
+  // var pokemonAPI= "https://pokeapi.co/api/v2/generation/1"    
+
+  // $.getJSON(pokemonAPI).done(function (data){
+  //     console.log(data);
+  //     $.each(data.pokemon_species, function (index, pokemon) { 
+  //         var name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+  //         console.log(name);
+  //         var p =$("<p>").html(`Pokemon specie no: ${index+1} is ${name}`);
+  //         p.appendTo("#pokemon");        
+  //     });
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  });
